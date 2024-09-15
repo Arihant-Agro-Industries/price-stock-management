@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Fertilizer and Chemicals - Stock Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Unique Fertilizer and Chemicals - Stock Management</h1>
+    </header>
+    <main>
+        <table id="unique-table">
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Product Name (Size)</th>
+                    <th>Brand</th>
+                    <th>Sale Price</th>
+                    <th>Stock (Units)</th>
+                    <th>Last Update</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+        <button id="manage-product-unique" class="button">Add Product</button>
+        <br><br>
+        <a href="index.html" class="button">Back to Home</a>
+    </main>
+
+    <!-- Modal for Add/Edit Product -->
+    <div id="product-modal-unique" class="modal">
+        <div class="modal-content">
+            <span class="close-unique">&times;</span>
+            <h2 id="modal-title-unique">Add Product</h2>
+            <form id="product-form-unique">
+                <label for="product-name-unique">Product Name (Size):</label>
+                <input type="text" id="product-name-unique" name="product-name-unique" required>
+                <label for="brand-unique">Brand:</label>
+                <input type="text" id="brand-unique" name="brand-unique" required>
+                <label for="sale-price-unique">Sale Price:</label>
+                <input type="text" id="sale-price-unique" name="sale-price-unique" required>
+                <label for="stock-unique">Stock (Units):</label>
+                <input type="text" id="stock-unique" name="stock-unique" required>
+                <button type="submit" class="button">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/scripts-unique.js"></script>
+</body>
+</html>

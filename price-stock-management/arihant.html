@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arihant Agro Industries - Stock Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Arihant Agro Industries - Stock Management</h1>
+    </header>
+    <main>
+        <table id="arihant-table">
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Product Name (Size)</th>
+                    <th>Stock (Units)</th>
+                    <th>Sale Price</th>
+                    <th>Last Update</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+        <button id="manage-product" class="button">Add Product</button>
+        <br><br>
+        <a href="index.html" class="button">Back to Home</a>
+    </main>
+
+    <!-- Modal for Add/Edit Product -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Add Product</h2>
+            <form id="product-form">
+                <label for="product-name">Product Name (Size):</label>
+                <input type="text" id="product-name" name="product-name" required>
+                <label for="stock">Stock (Units):</label>
+                <input type="text" id="stock" name="stock" required>
+                <label for="sale-price">Sale Price:</label>
+                <input type="text" id="sale-price" name="sale-price" required>
+                <button type="submit" class="button">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
